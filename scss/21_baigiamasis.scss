@@ -1,0 +1,162 @@
+$transdark: rgba(1, 1, 1, 0.8);
+$navbaras:  rgba(10, 120, 245);
+
+.main {
+    position: relative;
+    .ontopitem {
+        background-color: $transdark;
+        position: absolute;
+        width: 100%;
+        bottom: 52%;
+        
+        
+    
+        .toptext {
+            height: 380px;
+        }
+    
+        .navbar {
+           float: bottom;
+           background-color: $navbaras;
+        }
+    }
+}
+
+
+
+//
+
+/*body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+$center: center;
+$electra: rgba(3, 107, 95, 0.6);
+$dark-electra: rgba(3, 107, 95, 0.4);
+$extra-dark-electra: rgb(3, 107, 95);
+$custom-grey: rgb(219, 224, 224);
+$test:red;
+
+.cake {
+    height: auto;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        justify-content: $center;
+    }
+
+    .cake-1 {
+        color: $electra;
+    }
+}
+
+.style1 {
+    color: black;
+    font-weight: 700;
+}
+
+.style2 {
+    color: $electra;
+    font-weight: 500;
+}
+
+.style3 {
+    width: 2px;
+    color: $dark-electra;
+}
+
+.style4 {
+    background-color: $electra;
+}
+
+.list-group-item-action:active {
+    background-color: white;
+    color: $dark-electra;
+    border-left: 5px solid $extra-dark-electra;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-right: 0px;
+}
+
+.styled-tab-h {
+    font-weight: 700;
+}
+
+.styled-tab-p {
+    font-weight: 400;
+}
+
+.fa-mobile {
+    color: $electra;
+}
+
+.line-big {
+    line-height: 2.25;
+}
+
+.line-smal {
+    line-height: 0.1;
+}
+
+.awesome-features {
+    background-color: $electra;
+    color: white;
+
+    h2 {
+        font-weight: 800;
+    }
+
+    p {
+        font-weight: 800;
+    }
+
+    .glowing {
+        text-shadow: 0 0 3px #FFFFFF, 2px 2px 2px rgba(28,110,164,0);
+    }
+
+    .styled {
+        font-weight: 700;
+        color: $extra-dark-electra;
+    }
+}
+
+.get-app-button {
+    float: right;
+    background-color: $dark-electra;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 50px;
+    padding: 11px 23px 15px 23px;
+}
+
+.get-app-button:hover {
+    background-color: $extra-dark-electra;
+    color: white;
+}
+
+.footer {
+    ul {
+        color: $custom-grey; 
+    }
+    p {
+        color: $custom-grey;
+    }
+}
+
+.go-button {
+    flex-wrap: wrap;
+    background-color: $electra;
+    color: white;
+}
+
+.go-button2 {
+    flex-wrap: wrap;
+    color: white;
+}
+
+.go-button:hover {
+    background-color: $dark-electra;
+}
+*/
