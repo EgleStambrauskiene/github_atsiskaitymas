@@ -1,5 +1,9 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 $transdark: rgba(1, 1, 1, 0.7);
-$navbar:  rgba(10, 120, 245, 0.9);
+$navbar: rgba(10, 120, 245, 0.9);
 
 .transdarknav {
     width: 100%;
@@ -7,14 +11,16 @@ $navbar:  rgba(10, 120, 245, 0.9);
     .transdark {
         background-color: $transdark;
 
-        .transdarktext {
-            height: 380px;
-        }
+        
     }
 
     .navbar {
         background-color: $navbar;
     }
+}
+
+.transdarktext {
+    height: 50vh;
 }
 
 .carousel-fluid {
