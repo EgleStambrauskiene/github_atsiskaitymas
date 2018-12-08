@@ -10,6 +10,8 @@ $navbar: rgba(10, 120, 245, 0.9);
 
     .transdark {
         background-color: $transdark;
+        color: white;
+       
 
         
     }
@@ -19,9 +21,12 @@ $navbar: rgba(10, 120, 245, 0.9);
     }
 }
 
-.transdarktext {
+.transdarktext2 {
+    padding-top: 10vh;
     height: 50vh;
 }
+
+
 
 .carousel-fluid {
     position: absolute;
