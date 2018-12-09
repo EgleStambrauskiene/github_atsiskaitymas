@@ -113,27 +113,16 @@ $equestrian: rgb(248, 14, 6);
         .line2 {
             @include divlin2;
         }
-        
+    
         p {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
     }
 
-    h2 {
-        //font-size: 2rem;
-        font-weight: 600;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-
-    .line1 {
-        @include divlin1;
-    }
-
-    .line2 {
-        @include divlin2;
+    .row2 {
+        img {
+            width: 20vw;
+        }
     }
 }
 
