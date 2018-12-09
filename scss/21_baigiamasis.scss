@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background: grey;
 }
 
 $transdark: rgba(1, 1, 1, 0.7);
@@ -19,6 +20,7 @@ $equestrian: rgb(248, 14, 6);
             h1 {
                 font-family: 'Buenard', serif;
                 font-weight: bolder;
+                text-shadow: 0 0 3px #FFFFFF, 2px 2px 2px rgba(28,110,164,0);
             }
 
             p {
@@ -43,10 +45,75 @@ $equestrian: rgb(248, 14, 6);
     left: 0px;
     z-index: -1;
 }
-             
-    
 
-    
+.plude {
+    visibility: hidden;
+    height: 1px;
+    width: 100%;
+}
+
+/*@include media-breakpoint-up(sm) {
+    .plude {
+        visibility: hidden;
+        height: 10px;
+        width: 100%;
+    }
+}
+
+/*
+@include media-breakpoint-up(md) {
+    .plude {
+        display: block;
+        height: 10vh;
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .plude {
+        display: block;
+        height: 60vh;
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .plude {
+        display: block;
+        height: 80vh;
+        width: 100%;
+    }
+}
+*/
+.footeris {
+    /*background-image: url('https://media.gettyimages.com/photos/horse-racing-track-picture-id92356486');
+    filter: blur(0px);*/
+    background-color: $navbar;
+    color: white;
+
+    h5 {
+        font-weight: 800;
+    }
+
+    .line1 {
+        background-color: red;
+        height: 5px;
+        width: 25%;
+    }
+    .line2 {
+        background-color: red;
+        height: 3px;
+        width: 95%;
+    }
+
+    .aspecial {
+        color: white;
+    }
+}
+
+
+
+
 //
 
 /*body {
