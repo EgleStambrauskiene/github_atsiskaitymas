@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background: grey;
+    background: white;
 }
 
 $transdark: rgba(1, 1, 1, 0.7);
@@ -57,6 +57,7 @@ $equestrian: rgb(248, 14, 6);
 .plude {
     visibility: hidden;
     height: 1px;
+    //height: 79vh;
     width: 100%;
 }
 
@@ -93,6 +94,49 @@ $equestrian: rgb(248, 14, 6);
     }
 }
 */
+
+.aboutus {
+    background-color: bisque; 
+    color: black;
+    
+    .row1 {
+
+        h2 {
+            //font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .line1 {
+            @include divlin1;
+        }
+    
+        .line2 {
+            @include divlin2;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    h2 {
+        //font-size: 2rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .line1 {
+        @include divlin1;
+    }
+
+    .line2 {
+        @include divlin2;
+    }
+}
+
 .footeris {
     /*background-image: url('https://media.gettyimages.com/photos/horse-racing-track-picture-id92356486');
     filter: blur(0px);*/
