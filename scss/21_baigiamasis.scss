@@ -7,6 +7,18 @@ $transdark: rgba(1, 1, 1, 0.7);
 $navbar: rgba(10, 120, 245, 0.9);
 $equestrian: rgb(248, 14, 6);
 
+@mixin divlin2 {
+    background-color: red;
+        height: 5px;
+        width: 25%;
+}
+
+@mixin divlin1 {
+    background-color: red;
+        height: 3px;
+        width: 95%;
+}
+
 .transdarknav {
     width: 100%;
 
@@ -32,10 +44,6 @@ $equestrian: rgb(248, 14, 6);
     .navbar {
         background-color: $navbar;
         font-weight: 800;
-
-        li {
-    
-        }
     }
 }
 
@@ -96,23 +104,22 @@ $equestrian: rgb(248, 14, 6);
     }
 
     .line1 {
-        background-color: red;
-        height: 5px;
-        width: 25%;
+        @include divlin1;
     }
     .line2 {
-        background-color: red;
-        height: 3px;
-        width: 95%;
+        @include divlin2;
     }
 
     .aspecial {
         color: white;
+        &:hover {
+            color: red;
+        }
     }
 }
 
 
-
+    
 
 //
 
