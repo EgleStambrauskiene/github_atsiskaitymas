@@ -4,6 +4,7 @@ body {
 
 $transdark: rgba(1, 1, 1, 0.7);
 $navbar: rgba(10, 120, 245, 0.9);
+$equestrian: rgb(248, 14, 6);
 
 .transdarknav {
     width: 100%;
@@ -11,22 +12,30 @@ $navbar: rgba(10, 120, 245, 0.9);
     .transdark {
         background-color: $transdark;
         color: white;
-       
+        height: 50vh;
 
-        
+        .transdarktext2 {
+            
+            h1 {
+                font-family: 'Buenard', serif;
+                font-weight: bolder;
+            }
+
+            p {
+                font-weight: 400;
+            }
+        }
     }
 
     .navbar {
         background-color: $navbar;
+        font-weight: 800;
+
+        li {
+    
+        }
     }
 }
-
-.transdarktext2 {
-    padding-top: 10vh;
-    height: 50vh;
-}
-
-
 
 .carousel-fluid {
     position: absolute;
