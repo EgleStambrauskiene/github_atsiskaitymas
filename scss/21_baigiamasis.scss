@@ -6,7 +6,8 @@ body {
 $transdark: rgba(1, 1, 1, 0.7);
 $navbar: rgba(10, 120, 245, 0.9);
 $equestrian: rgb(248, 14, 6);
-$backgroud: rgb(246, 214, 171);
+$backgroud: rgb(245, 243, 240);
+$menuline: rgb(4, 97, 4);
 
 @mixin divlin2 {
     background-color: red;
@@ -18,6 +19,12 @@ $backgroud: rgb(246, 214, 171);
     background-color: red;
         height: 3px;
         width: 95%;
+}
+
+@mixin menuline {
+    color: $menuline;
+    font-style: italic;
+    font-weight: 600;
 }
 
 .transdarknav {
@@ -96,7 +103,7 @@ $backgroud: rgb(246, 214, 171);
 }
 */
 
-.aboutus {
+.home {
     background-color: $backgroud; 
     color: black;
     
@@ -138,6 +145,35 @@ $backgroud: rgb(246, 214, 171);
         }
     }
 }
+
+.auhorses {
+    background-color: $backgroud; 
+    color: black;
+
+    h4 {
+        @include menuline;
+    }
+
+    .row2 {
+
+        img {
+            width: 35vw; 
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        .line1 {
+            @include divlin1;
+        }
+        .line2 {
+            @include divlin2;
+        }
+          
+    }
+}
+
 
 .footeris {
     /*background-image: url('https://media.gettyimages.com/photos/horse-racing-track-picture-id92356486');
