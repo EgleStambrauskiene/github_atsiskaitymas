@@ -4,19 +4,19 @@ body {
 }
 
 $transdark: rgba(1, 1, 1, 0.7);
-$navbar: rgba(10, 120, 245, 0.9);
-$equestrian: rgb(248, 14, 6);
+$navbar: rgb(5, 96, 199);
+$equestrian: rgb(245, 8, 87);
 $backgroud: rgb(245, 243, 240);
 $menuline: rgb(4, 97, 4);
 
 @mixin divlin2 {
-    background-color: red;
-        height: 5px;
-        width: 25%;
+    background-color: $equestrian;
+    height: 5px;
+    width: 25%;
 }
 
 @mixin divlin1 {
-    background-color: red;
+    background-color: $equestrian;
         height: 3px;
         width: 95%;
 }
@@ -195,7 +195,7 @@ $menuline: rgb(4, 97, 4);
     .aspecial {
         color: white;
         &:hover {
-            color: red;
+            color: $equestrian;
         }
     }
 }
