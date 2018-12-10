@@ -6,6 +6,7 @@ body {
 $transdark: rgba(1, 1, 1, 0.7);
 $navbar: rgba(10, 120, 245, 0.9);
 $equestrian: rgb(248, 14, 6);
+$backgroud: rgb(246, 214, 171);
 
 @mixin divlin2 {
     background-color: red;
@@ -96,7 +97,7 @@ $equestrian: rgb(248, 14, 6);
 */
 
 .aboutus {
-    background-color: bisque; 
+    background-color: $backgroud; 
     color: black;
     
     .row1 {
@@ -122,6 +123,18 @@ $equestrian: rgb(248, 14, 6);
     .row2 {
         img {
             width: 20vw;
+        }
+
+        h5 {
+            font-weight: 600;
+        }
+
+        .line1 {
+            @include divlin1;
+        }
+    
+        .line2 {
+            @include divlin2;
         }
     }
 }
