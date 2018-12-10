@@ -1,0 +1,1 @@
+$('#halymyresModal').modal('handleUpdate');
