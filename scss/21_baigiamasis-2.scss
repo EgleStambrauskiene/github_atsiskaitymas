@@ -1,0 +1,205 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+$transparentDark: rgba(1, 1, 1, 0.7);
+$navbar: rgb(5, 96, 199);
+$accents: rgb(245, 8, 87);
+$background: rgb(245, 243, 240);
+$helpText: rgb(4, 97, 4);
+
+@mixin line2 {
+    background-color: $accents;
+    height: 5px;
+    width: 25%;
+}
+
+@mixin line1 {
+    background-color: $accents;
+        height: 3px;
+        width: 95%;
+}
+
+@mixin helpText {
+    color: $helpText;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.topRowContainer {
+    width: 100%;
+
+    .transparentDarkContainer {
+        background-color: $transparentDark;
+        color: white;
+        height: 50vh;
+
+        .textInDark {
+            
+            h1 {
+                font-family: 'Buenard', serif;
+                font-weight: bolder;
+                text-shadow: 0 0 3px #FFFFFF, 2px 2px 2px rgba(28,110,164,0);
+            }
+
+            p {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .navbar {
+        background-color: $navbar;
+        font-weight: 800;
+    }
+
+    .carousel-fluid {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .emptySpace {
+        visibility: hidden;
+        height: 1px;
+        //height: 79vh;
+        width: 100%;
+    }
+}
+
+/*@include media-breakpoint-up(sm) {
+    .plude {
+        visibility: hidden;
+        height: 10px;
+        width: 100%;
+    }
+}
+
+/*
+@include media-breakpoint-up(md) {
+    .plude {
+        display: block;
+        height: 10vh;
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .plude {
+        display: block;
+        height: 60vh;
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .plude {
+        display: block;
+        height: 80vh;
+        width: 100%;
+    }
+}
+*/
+
+/*
+.home {
+    background-color: $backgroud; 
+    color: black;
+    //display: none;
+    
+    .row1 {
+
+        h2 {
+            //font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .line1 {
+            @include divlin1;
+        }
+    
+        .line2 {
+            @include divlin2;
+        }
+    
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .row2 {
+        img {
+            width: 20vw;
+        }
+
+        h5 {
+            font-weight: 600;
+        }
+
+        .line1 {
+            @include divlin1;
+        }
+    
+        .line2 {
+            @include divlin2;
+        }
+    }
+}
+
+.auhorses {
+    background-color: $backgroud; 
+    color: black;
+    //display: none;
+
+    h4 {
+        @include menuline;
+    }
+
+    .row {
+
+        img {
+            width: 35vw; 
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        .line1 {
+            @include divlin1;
+        }
+        .line2 {
+            @include divlin2;
+        }
+          
+    }
+}
+*/
+
+/*
+.footeris {
+    /*background-image: url('https://media.gettyimages.com/photos/horse-racing-track-picture-id92356486');
+    filter: blur(0px);*/
+    /*background-color: $navbar;
+    color: white;
+
+    h5 {
+        font-weight: 800;
+    }
+
+    .line1 {
+        @include divlin1;
+    }
+    .line2 {
+        @include divlin2;
+    }
+
+    .aspecial {
+        color: white;
+        &:hover {
+            color: $equestrian;
+        }
+    }
+}
+*/

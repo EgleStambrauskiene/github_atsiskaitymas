@@ -106,6 +106,7 @@ $menuline: rgb(4, 97, 4);
 .home {
     background-color: $backgroud; 
     color: black;
+    //display: none;
     
     .row1 {
 
@@ -149,6 +150,7 @@ $menuline: rgb(4, 97, 4);
 .auhorses {
     background-color: $backgroud; 
     color: black;
+    //display: none;
 
     h4 {
         @include menuline;
