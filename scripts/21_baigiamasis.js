@@ -1,5 +1,6 @@
-$('.flex-container .flex-row .transdarknav .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu #ourHorsesLink').click(function(){
-    $('.flex-container .flex-row #home').hide();
+
+$('.bodyContainer .topRow .topRowContainer .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu #ourHorsesLink').click(function(){
+    $('.bodyContainer .centerRow1').hide();
 }, function(){
-    $('.flex-container .flex-row #ourHorsesContainer').show();
+    $('.bodyContainer .centerRow2').show();
 });

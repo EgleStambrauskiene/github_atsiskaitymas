@@ -1,41 +1,40 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background: white;
 }
 
-$transdark: rgba(1, 1, 1, 0.7);
+$transparentDark: rgba(1, 1, 1, 0.7);
 $navbar: rgb(5, 96, 199);
-$equestrian: rgb(245, 8, 87);
-$backgroud: rgb(245, 243, 240);
-$menuline: rgb(4, 97, 4);
+$accents: rgb(245, 8, 87);
+$background: rgb(245, 243, 240);
+$helpText: rgb(4, 97, 4);
 
-@mixin divlin2 {
-    background-color: $equestrian;
+@mixin line2 {
+    background-color: $accents;
     height: 5px;
     width: 25%;
 }
 
-@mixin divlin1 {
-    background-color: $equestrian;
+@mixin line1 {
+    background-color: $accents;
         height: 3px;
         width: 95%;
 }
 
-@mixin menuline {
-    color: $menuline;
+@mixin helpText {
+    color: $helpText;
     font-style: italic;
     font-weight: 600;
 }
 
-.transdarknav {
+.topRowContainer {
     width: 100%;
 
-    .transdark {
-        background-color: $transdark;
+    .transparentDarkContainer {
+        background-color: $transparentDark;
         color: white;
         height: 50vh;
 
-        .transdarktext2 {
+        .textInDark {
             
             h1 {
                 font-family: 'Buenard', serif;
@@ -53,23 +52,34 @@ $menuline: rgb(4, 97, 4);
         background-color: $navbar;
         font-weight: 800;
     }
+
+    .carousel-fluid {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .emptySpace {
+        position: absolute;
+        //visibility: hidden;
+        background-color: rgba(255, 0, 0, 0.3);
+        //height: 10px;
+        width: 100%;
+        //float: bottom;
+        height: 5vh;
+    }
 }
 
-.carousel-fluid {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
+
+/*@include media-breakpoint-up(xl) {
+    .emptySpace {
+        //height: 75vh;
+        //width: 100%;
+    }
 }
 
-.plude {
-    visibility: hidden;
-    height: 1px;
-    //height: 79vh;
-    width: 100%;
-}
-
-/*@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(sm) {
     .plude {
         visibility: hidden;
         height: 10px;
@@ -77,7 +87,6 @@ $menuline: rgb(4, 97, 4);
     }
 }
 
-/*
 @include media-breakpoint-up(md) {
     .plude {
         display: block;
@@ -104,7 +113,7 @@ $menuline: rgb(4, 97, 4);
 */
 
 .home {
-    background-color: $backgroud; 
+    background-color: $background; 
     color: black;
     //display: none;
     
@@ -116,11 +125,11 @@ $menuline: rgb(4, 97, 4);
         }
 
         .line1 {
-            @include divlin1;
+            @include line1;
         }
     
         .line2 {
-            @include divlin2;
+            @include line2;
         }
     
         p {
@@ -138,22 +147,22 @@ $menuline: rgb(4, 97, 4);
         }
 
         .line1 {
-            @include divlin1;
+            @include line1;
         }
     
         .line2 {
-            @include divlin2;
+            @include line2;
         }
     }
 }
 
-.auhorses {
-    background-color: $backgroud; 
+.aboutUsOurHorses {
+    background-color: $background; 
     color: black;
     //display: none;
 
     h4 {
-        @include menuline;
+        @include helpText;
     }
 
     .row {
@@ -167,10 +176,10 @@ $menuline: rgb(4, 97, 4);
         }
 
         .line1 {
-            @include divlin1;
+            @include line1;
         }
         .line2 {
-            @include divlin2;
+            @include line2;
         }
           
     }
@@ -188,156 +197,16 @@ $menuline: rgb(4, 97, 4);
     }
 
     .line1 {
-        @include divlin1;
+        @include line1;
     }
     .line2 {
-        @include divlin2;
+        @include line2;
     }
 
     .aspecial {
         color: white;
         &:hover {
-            color: $equestrian;
+            color: $accents;
         }
     }
 }
-
-
-    
-
-//
-
-/*body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
-}
-
-$center: center;
-$electra: rgba(3, 107, 95, 0.6);
-$dark-electra: rgba(3, 107, 95, 0.4);
-$extra-dark-electra: rgb(3, 107, 95);
-$custom-grey: rgb(219, 224, 224);
-$test:red;
-
-.cake {
-    height: auto;
-    flex-wrap: wrap;
-
-    div {
-        display: flex;
-        justify-content: $center;
-    }
-
-    .cake-1 {
-        color: $electra;
-    }
-}
-
-.style1 {
-    color: black;
-    font-weight: 700;
-}
-
-.style2 {
-    color: $electra;
-    font-weight: 500;
-}
-
-.style3 {
-    width: 2px;
-    color: $dark-electra;
-}
-
-.style4 {
-    background-color: $electra;
-}
-
-.list-group-item-action:active {
-    background-color: white;
-    color: $dark-electra;
-    border-left: 5px solid $extra-dark-electra;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-    border-right: 0px;
-}
-
-.styled-tab-h {
-    font-weight: 700;
-}
-
-.styled-tab-p {
-    font-weight: 400;
-}
-
-.fa-mobile {
-    color: $electra;
-}
-
-.line-big {
-    line-height: 2.25;
-}
-
-.line-smal {
-    line-height: 0.1;
-}
-
-.awesome-features {
-    background-color: $electra;
-    color: white;
-
-    h2 {
-        font-weight: 800;
-    }
-
-    p {
-        font-weight: 800;
-    }
-
-    .glowing {
-        text-shadow: 0 0 3px #FFFFFF, 2px 2px 2px rgba(28,110,164,0);
-    }
-
-    .styled {
-        font-weight: 700;
-        color: $extra-dark-electra;
-    }
-}
-
-.get-app-button {
-    float: right;
-    background-color: $dark-electra;
-    color: white;
-    font-size: 1.1em;
-    border-radius: 50px;
-    padding: 11px 23px 15px 23px;
-}
-
-.get-app-button:hover {
-    background-color: $extra-dark-electra;
-    color: white;
-}
-
-.footer {
-    ul {
-        color: $custom-grey; 
-    }
-    p {
-        color: $custom-grey;
-    }
-}
-
-.go-button {
-    flex-wrap: wrap;
-    background-color: $electra;
-    color: white;
-}
-
-.go-button2 {
-    flex-wrap: wrap;
-    color: white;
-}
-
-.go-button:hover {
-    background-color: $dark-electra;
-}
-*/
