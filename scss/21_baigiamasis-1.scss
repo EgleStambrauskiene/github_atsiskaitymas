@@ -1,8 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
-$transparentDark: rgba(1, 1, 1, 0.7);
+$transparentDark: rgba(1, 1, 1, 0.5);
 $navbar: rgb(5, 96, 199);
 $accents: rgb(245, 8, 87);
 $background: rgb(245, 243, 240);
@@ -18,6 +19,7 @@ $helpText: rgb(4, 97, 4);
     background-color: $accents;
         height: 3px;
         width: 95%;
+        margin-bottom: 10px;
 }
 
 @mixin helpText {
@@ -27,13 +29,21 @@ $helpText: rgb(4, 97, 4);
 }
 
 .headerContainer {
-    width: 100%;
+    
+    .carousel {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
 
-    .transparentDarkRow1 {
+    .transparentDark {
         background-color: $transparentDark;
         color: white;
-        height: 50vh;
-
+        width: 100%;
+        height: 60vh;
+        
         .textInDark {
             
             h1 {
@@ -48,46 +58,33 @@ $helpText: rgb(4, 97, 4);
         }
     }
 
-    .navbarRow2 {
+    .navbar {
         background-color: $navbar;
         font-weight: 800;
+        
     }
-
-    .emptySpaceRow3 {
-
-        .emptySpace {
-            position: absolute;
-            //visibility: hidden;
-            background-color: rgba(255, 0, 0, 0.3);
-            //height: 10px;
-            width: 100%;
-            //float: bottom;
-            height: 5vh;
-        }
-
-    }
-
-    .fotoCarouselRow4 {
-
-        .carousel-fluid {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            z-index: -1;
-        }
-    }
+  
 }
 
+.test {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+    
 .home {
     background-color: $background; 
     color: black;
+    //width: 100%;
     //display: none;
     
     .homeRow1 {
+        width: 95%;
 
         h2 {
             //font-size: 2rem;
             font-weight: 600;
+            width: 95%
         }
 
         .line1 {
@@ -104,6 +101,7 @@ $helpText: rgb(4, 97, 4);
     }
 
     .homeRow2 {
+        width: 95%;
 
         img {
             width: 20vw;
@@ -122,13 +120,14 @@ $helpText: rgb(4, 97, 4);
         }
     }
 }
-/*
+
 .aboutUsOurHorses {
     background-color: $background; 
     color: black;
-    //display: none;
+    display: none;
 
     .ourHorsesRow1 {
+        width: 95%;
 
         h4 {
             @include helpText;
@@ -136,6 +135,7 @@ $helpText: rgb(4, 97, 4);
     }
 
     .rowHorses {
+        width: 95%;
 
         img {
             width: 35vw; 
@@ -154,28 +154,31 @@ $helpText: rgb(4, 97, 4);
           
     }
 }
-*/
-//.footeris {
+
+.footeris {
     /*background-image: url('https://media.gettyimages.com/photos/horse-racing-track-picture-id92356486');
     filter: blur(0px);*/
-   /* background-color: $navbar;
+    background-color: $navbar;
     color: white;
+    .rowFooter {
+        width: 95%;
 
-    h5 {
-        font-weight: 800;
-    }
-
-    .line1 {
-        @include line1;
-    }
-    .line2 {
-        @include line2;
-    }
-
-    .aspecial {
-        color: white;
-        &:hover {
-            color: $accents;
+        h5 {
+            font-weight: 800;
         }
-    }
-}*/
+
+        .line1 {
+            @include line1;
+        }
+        .line2 {
+            @include line2;
+        }
+
+        .aspecial {
+            color: white;
+            &:hover {
+                color: $accents;
+            }
+        }
+    }   
+}

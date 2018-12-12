@@ -1,6 +1,6 @@
 
-$('.bodyContainer .topRow .topRowContainer .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu #ourHorsesLink').click(function(){
-    $('.bodyContainer .centerRow1').hide();
+$('#ourHorsesLink').click(function(){
+    $('#home').hide();
 }, function(){
-    $('.bodyContainer .centerRow2').show();
+    $('.horses').show();
 });
