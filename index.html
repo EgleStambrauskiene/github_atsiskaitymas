@@ -53,7 +53,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#"><span class="fas fa-home"></span> <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#"><span class="fas fa-home" id="homeLink"></span> <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -92,12 +92,12 @@
                                     <a class="nav-link" href="#">CONTACT US</a>
                                 </li>
                             </ul>
-                            <a href="#search" class="btn btn-icon btn-link header-btn float-right open" data-toggle="search-form" data-target=".header-search">
+                            <!--<a href="#search" class="btn btn-icon btn-link header-btn float-right open" data-toggle="search-form" data-target=".header-search">
                                 <i class="fa fa-search fa-flip-horizontal search-icon"></i>
                             </a>
                             <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none c-button" data-toggle="off-canvas" data-target=".navbar-main" role="button" aria-controls="js-offcanvas-target-1541936334063-clone" aria-expanded="false">
                                 <span class="c-button__text"> <i class="fa fa-bars"></i> </span>
-                            </a>
+                            </a>-->
                         </div>
                     </nav>
                     <!--//navbar-->
@@ -108,7 +108,7 @@
         
         <!--central body part-->
         <!-- HOME container-->
-        <div class="container-fluid home py-5 mx-auto" id="home">
+        <div class="container-fluid home everyContainer py-5 mx-auto" id="home">
             <div class="flex-row homeRow1 mx-auto pt-4">
                 <h2>What Makes The Equestrian Club Different?</h2>
                     <div class="line2 d-block"></div>
@@ -140,7 +140,7 @@
                     <div class="line2 d-block"></div>
                     <div class="line1 d-block"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed risus lectus. Aliquam porta vulputate tincidunt.</p>
-                    <a href="#">See All our horses</a>
+                    <a href="#"id="bodyOurHorsesLink">See All our horses</a>
                 </div>
                
                 <div class="col-sm-6 col-lg-3">
@@ -156,7 +156,7 @@
         <!--//HOME container-->
 
         <!--ABOUT US/OUR HORSES container-->
-        <div class="container-fluid aboutUsOurHorses py-5" id="horses">
+        <div class="container-fluid aboutUsOurHorses everyContainer py-5" id="horses">
             <div class="row ourHorsesRow1 p-5 mx-auto">
                 <h4>Our Horses</h4>
             </div>
@@ -248,7 +248,7 @@
                         <div class="row">
                             <div class="col">
                                 <ul>
-                                    <li>Riding School</li>
+                                    <li><a class="aspecial" href="#">Riding School</a></li>
                                     <li><a class="aspecial" href="#">Equestrian News</a></li>
                                     <li><a class="aspecial" href="#">Media Gallery</a></li>
                                 </ul>
@@ -256,7 +256,7 @@
                             <div class="col">
                                 <ul>
                                     <li><a class="aspecial" href="#">Contests</a></li>
-                                    <li><a class="aspecial" href="#">Our Horses</a></li>
+                                    <li><a class="aspecial" href="#" id="footOurHorsesLink">Our Horses</a></li>
                                     <li><a class="aspecial" href="#">Event Agenda</a></li>
                                 </ul>
                             </div>
